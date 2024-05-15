@@ -1,8 +1,10 @@
+import { Typography } from "@mui/material";
+
 export default function Places({ title, places, fallbackText, onSelectPlace }) {
   return (
     <section className="places-category">
-      <h2>{title}</h2>
-      {places.length === 0 && <p className='fallback-text'>{fallbackText}</p>}
+      <Typography variant="h5" align="center" gutterBottom>{title}</Typography>
+      {places.length === 0 && <Typography variant="body1" align='center'>{fallbackText}</Typography>}
       {places.length > 0 && (
         <ul className="places">
           {places.map((place) => (

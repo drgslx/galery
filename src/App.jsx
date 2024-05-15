@@ -83,7 +83,7 @@ function App() {
 
       <header>
         <img src={logoImg} alt="Stylized globe" />
-        <Typography variant='h2' align='center'>PlacePicker</Typography>
+        <Typography variant='h3' align='center'>PlacePicker</Typography>
         <Typography variant='h6' gutterBottom>
           Create your personal collection of places you would like to visit or
           you have visited.
