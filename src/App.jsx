@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
+import Typography from '@mui/material/Typography';
+
 
 import Places from './components/Places.jsx';
 import { AVAILABLE_PLACES } from './data.js';
@@ -81,12 +83,13 @@ function App() {
 
       <header>
         <img src={logoImg} alt="Stylized globe" />
-        <h1>PlacePicker</h1>
-        <p>
+        <Typography variant='h2' align='center'>PlacePicker</Typography>
+        <Typography variant='h6' gutterBottom>
           Create your personal collection of places you would like to visit or
           you have visited.
-        </p>
+        </Typography>
       </header>
+
       <main>
         <Places
           title="I'd like to visit ..."
